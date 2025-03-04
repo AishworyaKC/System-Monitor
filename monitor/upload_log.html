@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Log File</title>
+</head>
+<body>
+    <h2>Upload a Log File</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" required>
+        <button type="submit">Upload & Scan</button>
+    </form>
+</body>
+</html>

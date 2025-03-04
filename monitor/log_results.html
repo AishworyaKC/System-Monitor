@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Scan Results</title>
+</head>
+<body>
+    <h2>Log Scan Results</h2>
+    <ul>
+        {% for alert in alerts %}
+            <li>{{ alert }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
